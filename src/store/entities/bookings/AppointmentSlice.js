@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import appointments from "../../../data/servicecentre";
 const AppointmentSlice = createSlice({
   name: "appointments",
-  initialState: [],
+  initialState: appointments,
   reducers: {
     add: (state, action) => {
       state.push(action.payload);
